@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  border: solid red;
+  background-color: yellow;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav {
+  background-color: pink;
+  width: 30vw;
+  width: 50%;
+}
+
+ul {
+  border: solid green;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+li {
+  font-size: 16px;
+  font-size: 1rem;
+  font-size: 1em;
+  font-size: 32px;
+  font-size: 2rem;
+  font-size: 2em;
+}/*# sourceMappingURL=style.css.map */

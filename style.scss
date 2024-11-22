@@ -1,0 +1,51 @@
+* {
+  margin: 0; //margem 0
+  padding: 0; // preenchimento 0
+  box-sizing: border-box; //aceite as medidas que eu colocar
+}
+
+//seletor{
+// propriedade: valor; }
+
+//header é pai da ima(loga) e da ul
+header {
+  border: solid red; //borda contínua de cor vermelha
+  background-color: yellow;
+  display: flex;
+  //justify-content: flex-start; //É o padrão. Os itens são postos no começo do eixo.
+  //justify-content: flex-end; //OS itens são postos no final do eixo.
+  //justify-content: center; //Os itens são alinhados no centro (meio)
+
+  //justify-content: space-around; //Espaço ao redor
+  //justify-content: space-evenly; //O mesmo espaço entre os itens
+  justify-content: space-between; //O primeiro e o último item ficam nas laterais, e os demais são alinhados entre sí.
+}
+
+img {
+}
+
+//nav é pai da ul
+nav {
+  background-color: pink;
+  width: 30vw; //vw é relacionado a largura da sua tela
+  width: 50%; //width = largura
+  // % sempre vai ser relacionada a caixa pai
+}
+
+//ul é pai das li
+ul {
+  border: solid green;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+li {
+  font-size: 16px; //tamanho da fonte
+  //Px é uma medida absoluta, fixa. Vai ter sempre o mesmo comportamento.
+  font-size: 1rem; //é baseado na medida do elemento pai, se existir.
+  font-size: 1em; //é baseado na medida do elemento raiz, se existir.
+
+  font-size: 32px; //32px fixos
+  font-size: 2rem; //16 * 2 = 32
+  font-size: 2em; // 16*2 = 32 
+}
