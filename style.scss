@@ -9,31 +9,29 @@
 
 //header é pai da img(logo) e da ul
 header {
-  height: 20vh; //viewport height, altura da janela. 
-  border: solid red; //borda contínua de cor vermelha
-  background-color: #ff0000; //Hexadecimal, composto por uma combinação de três conjuntos de pares formados por letras e números A a F. 
+  height: 20vh; //viewport height, altura da janela.
+  // border: solid red; //borda contínua de cor vermelha
+  background-color: #ff0000; //Hexadecimal, composto por uma combinação de três conjuntos de pares formados por letras e números A a F.
   background-color: #00ff00;
   background-color: #0000ff;
   background-color: SandyBrown; //busca por nome da cor
-  background-color: #F4A460; //busca por hexadecimal
-  background-color: rgb(244,164,96); //busca por rgb
-  background-color: #D9D9D9;
+  background-color: #f4a460; //busca por hexadecimal
+  background-color: rgb(244, 164, 96); //busca por rgb
+  background-color: #d9d9d9;
   display: flex;
   // justify-content: flex-start; //É o padrão. Os itens são postos no começo do eixo.
   // justify-content: flex-end; //OS itens são postos no final do eixo.
   // justify-content: center; //Os itens são alinhados no centro (meio)
 
-  // justify-content: space-around; //Espaço ao redor
-  // justify-content: space-evenly; //O mesmo espaço entre os itens
-  justify-content: space-between; //O primeiro e o último item ficam nas laterais, e os demais são alinhados entre sí.
+  justify-content: space-around; //Espaço ao redor
+  //justify-content: space-evenly; //O mesmo espaço entre os itens
+  //justify-content: space-between; //O primeiro e o último item ficam nas laterais, e os demais são alinhados entre sí.
 
-  align-items: center ; // Os itens são alinhados no meio do eixo. Eixo Y vertical.
-
+  align-items: center; // Os itens são alinhados no meio do eixo. Eixo Y vertical.
 }
 
 //nav é pai da ul
 nav {
-  background-color: pink;
   width: 30vw; //vw é relacionado a largura da sua tela
   width: 50%; //width = largura
   // % sempre vai ser relacionada a caixa pai
@@ -41,9 +39,11 @@ nav {
 
 //ul é pai das li
 ul {
-  border: solid green;
   display: flex;
   justify-content: space-evenly;
+
+  //list style, estilo de lista
+  list-style: none; //remover a marcação da lista
 }
 
 li {
@@ -55,4 +55,43 @@ li {
   font-size: 32px; //32px fixos
   font-size: 2rem; //16 * 2 = 32
   font-size: 2em; // 16*2 = 32
+
+  //Text transform, é a transformação de texto. capitalize, lowercase e uppercase
+  text-transform: lowercase; //Tudo fica minúsculo
+  text-transform: uppercase; //Tudo fica maiúsculo
+  text-transform: capitalize; //A primeira letra de cada palavra fica maiúsculo
 }
+
+//Text decoration é usada para definir a formatação de underline, overline e none.
+a {
+  text-decoration: none; //sem decoração
+  //text-decoration: underline; //linha abaixo
+  // text-decoration: overline; //linha acima
+}
+
+.containerHistoria {
+  border: solid red;
+  width: 40%;
+  height: 70vh;
+  display: flex;
+  flex-direction: row; //Linha, é o comportamento padrão.
+  flex-direction: row-reverse; // Linha reversa
+  flex-direction: column-reverse; //Coluna reversa
+  flex-direction: column; //Coluna
+  justify-content: space-evenly;
+  align-items: center;
+h2{
+  font-size: 32px; //fixa
+  font-size: 2em; //flexível
+  font-size: 2rem; //flexível
+}
+
+p{
+  width: 80%;
+  border: solid green;
+  font-size: 1.5rem; //como se fosse 24px 16 + 8
+}
+
+}
+
+

@@ -6,29 +6,27 @@
 
 header {
   height: 20vh;
-  border: solid red;
   background-color: #ff0000;
   background-color: #00ff00;
   background-color: #0000ff;
   background-color: SandyBrown;
-  background-color: #F4A460;
+  background-color: #f4a460;
   background-color: rgb(244, 164, 96);
-  background-color: #D9D9D9;
+  background-color: #d9d9d9;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 }
 
 nav {
-  background-color: pink;
   width: 30vw;
   width: 50%;
 }
 
 ul {
-  border: solid green;
   display: flex;
   justify-content: space-evenly;
+  list-style: none;
 }
 
 li {
@@ -38,4 +36,34 @@ li {
   font-size: 32px;
   font-size: 2rem;
   font-size: 2em;
+  text-transform: lowercase;
+  text-transform: uppercase;
+  text-transform: capitalize;
+}
+
+a {
+  text-decoration: none;
+}
+
+.containerHistoria {
+  border: solid red;
+  width: 40%;
+  height: 70vh;
+  display: flex;
+  flex-direction: row;
+  flex-direction: row-reverse;
+  flex-direction: column-reverse;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.containerHistoria h2 {
+  font-size: 32px;
+  font-size: 2em;
+  font-size: 2rem;
+}
+.containerHistoria p {
+  width: 80%;
+  border: solid green;
+  font-size: 1.5rem;
 }/*# sourceMappingURL=style.css.map */
