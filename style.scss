@@ -7,21 +7,28 @@
 //seletor{
 // propriedade: valor; }
 
-//header é pai da ima(loga) e da ul
+//header é pai da img(logo) e da ul
 header {
+  height: 20vh; //viewport height, altura da janela. 
   border: solid red; //borda contínua de cor vermelha
-  background-color: yellow;
+  background-color: #ff0000; //Hexadecimal, composto por uma combinação de três conjuntos de pares formados por letras e números A a F. 
+  background-color: #00ff00;
+  background-color: #0000ff;
+  background-color: SandyBrown; //busca por nome da cor
+  background-color: #F4A460; //busca por hexadecimal
+  background-color: rgb(244,164,96); //busca por rgb
+  background-color: #D9D9D9;
   display: flex;
-  //justify-content: flex-start; //É o padrão. Os itens são postos no começo do eixo.
-  //justify-content: flex-end; //OS itens são postos no final do eixo.
-  //justify-content: center; //Os itens são alinhados no centro (meio)
+  // justify-content: flex-start; //É o padrão. Os itens são postos no começo do eixo.
+  // justify-content: flex-end; //OS itens são postos no final do eixo.
+  // justify-content: center; //Os itens são alinhados no centro (meio)
 
-  //justify-content: space-around; //Espaço ao redor
-  //justify-content: space-evenly; //O mesmo espaço entre os itens
+  // justify-content: space-around; //Espaço ao redor
+  // justify-content: space-evenly; //O mesmo espaço entre os itens
   justify-content: space-between; //O primeiro e o último item ficam nas laterais, e os demais são alinhados entre sí.
-}
 
-img {
+  align-items: center ; // Os itens são alinhados no meio do eixo. Eixo Y vertical.
+
 }
 
 //nav é pai da ul
@@ -47,5 +54,5 @@ li {
 
   font-size: 32px; //32px fixos
   font-size: 2rem; //16 * 2 = 32
-  font-size: 2em; // 16*2 = 32 
+  font-size: 2em; // 16*2 = 32
 }
